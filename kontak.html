@@ -20,31 +20,22 @@
 
     <main>
         <h2>Formulir Pemesanan Jasa & Layanan Pelanggan</h2>
-        <p>Silahkan Isi Formulir di bawah ini untuk Mengajukan Pemesanan
-            Paket Jasa atau berkonsultasi dengan tim ahli kami.
-        </p>
-
-        <form action="contact.php" method="POST">
-            <fieldset>
-            <legend>Contact</legend>
-            <p>
-            <label>Name:</label>
-            <input type="text" name="name" placeholder="your name..." />
-            </p>
-            <p>
-            <label>Subject:</label>
-            <input type="text" name="katalog" placeholder="katalog..." />
-            </p>
-            <p>
-            <label>Email:</label>
-            <input type="email" name="email" placeholder="your email..." />
-            </p>
-            <p>
-            <input type="submit" name="submit" value="Send" />
-            </p>
-            </fieldset>
+        <p>Silakan isi formulir di bawah ini untuk mengajukan pemesanan
+            paket jasa atau berkonsultasi dengan tim ahli kami.</p>
+        <form action="#" method="post">
+            <!-- Grub 1 Data Diri Pelanggan -->
+             <fieldset>
+                <legend><b>1. Informasi Identitas Pemesan</b></legend>
+                <br>
+                <label for="nama_lengkap">Nama Lengkap / Instansi:</label><br>
+                <input type="text" name="nama_lengkap" id="nama_lengkap"
+                placeholder="Contoh: Marzelo Zavier" size="40" required>
+             </fieldset>
+             <br>
+             <button type="submit"><b>Kirim pemesanan Sekarang</b></button>
+             <button type="reset">Bersihkan Formulir</button>
         </form>
-
     </main>
+
 </body>
 </html>
