@@ -1,97 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Pemesanan</title>
 </head>
+
 <body>
+
     <!-- Bagian Kepala Halaman (Header & Navigasi) -->
     <header>
-        <h1 align="center">Form Pemesanan Ringkas - Poliban DigiCraft &nbsp;&nbsp; <td><a href="kontak.html">Kembali Ke Beranda</a></td></h1>
-
+        <h1 align="center">
+            Form Pemesanan Ringkas - Poliban DigiCraft
+            &nbsp;&nbsp;
+            <a href="../kontak.html">Kembali Ke Beranda</a>
+        </h1>
         <hr>
     </header>
 
+    <!-- Informasi Produk -->
     <section>
-        <!-- Menampilkan Gambar Mockup (Gunakan gambar yang ada di folder komputer Anda) -->
-        <p>
-            <table cellpadding="20">
-    <tr>
-        <td>
-            <img src="picture/sf90xx.png" width="380">
-        </td>
+        <!-- Menampilkan gambar mockup -->
+        <table cellpadding="20">
+            <tr>
+                <td>
+                    <img src="picture/sf90xx.png" width="380" alt="Ferrari SF90">
+                </td>
 
-        <td>
-            <h2>Ferrari SF90</h2>
-            <p>Ferrari SF90 Stradale adalah supercar hibrida plug-in pertama Ferrari dengan tenaga total 1.000 cv dan akselerasi 0-100 km/jam dalam 2,5 detik.</p>
-        </td>
-    </tr>
-</table>
-        </p>
+                <td>
+                    <h2>Ferrari SF90</h2>
+
+                    <p>
+                        Ferrari SF90 Stradale adalah supercar hibrida plug-in
+                        pertama Ferrari dengan tenaga total 1.000 cv dan
+                        akselerasi 0-100 km/jam dalam 2,5 detik.
+                    </p>
+                </td>
+            </tr>
+        </table>
     </section>
 
+    <!-- Daftar Paket dan Harga -->
     <section>
-
         <table border="1" cellpadding="10">
-        <tr>
-            <td bgcolor="ADD8E6">Package Name</td>
-            <td bgcolor="ADD8E6">Price</td>
-        </tr>
-        <tr>
-            <td>Ferrari SF90 Stradale</td>
-            <td>Rp 8.370.000.000</td>
-        </tr>
-        <tr>
-            <td>Ferrari SF90 Spider</td>
-            <td>Rp 9.190.000.000</td>
-        </tr>
-        <tr>
-            <td>Ferrari SF90XX Stradale</td>
-            <td>Rp 15.020.000.000</td>
-        </tr>
-    </table>
+            <tr>
+                <td bgcolor="ADD8E6">Package Name</td>
+                <td bgcolor="ADD8E6">Price</td>
+            </tr>
 
+            <tr>
+                <td>Ferrari SF90 Stradale</td>
+                <td>Rp 8.370.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Ferrari SF90 Spider</td>
+                <td>Rp 9.190.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Ferrari SF90XX Stradale</td>
+                <td>Rp 15.020.000.000</td>
+            </tr>
+        </table>
     </section>
 
-<br>
+    <br>
 
+    <!-- Formulir Pemesanan -->
     <form action="#" method="post">
 
-            <!-- Grub 1 Data Diri Pelanggan -->
-            <fieldset>
-                <legend><b>Formulir Pemesanan</b></legend>
+        <fieldset>
+            <legend>
+                <b>Formulir Pemesanan</b>
+            </legend>
 
-                <br>
+            <br>
 
-                <label for="nama_lengkap">Nama Lengkap:</label><br>
-                <input type="text" name="nama_lengkap" id="nama_lengkap" size="40" required>
+            <!-- Nama Lengkap -->
+            <label for="nama_lengkap">Nama Lengkap:</label>
+            <br>
 
-                <br>
+            <input
+                type="text"
+                name="nama_lengkap"
+                id="nama_lengkap"
+                size="40"
+                required
+            >
 
-                <label for="email_pemesanan">Email:</label><br>
-                <input type="email" name="email_pemesanan" id="email_pemesanan"
-                    placeholder="Email" size="40" required>
+            <br>
 
-                <br>
+            <!-- Email -->
+            <label for="email_pemesanan">Email:</label>
+            <br>
 
-                <label for="pilih_paket">Paket</label><br>
+            <input
+                type="email"
+                name="email_pemesanan"
+                id="email_pemesanan"
+                placeholder="Email"
+                size="40"
+                required
+            >
 
-                <select name="pilih_paket" id="pilih_paket">
-                    <option value="">Pilih Paket</option>
-                    <option value="Ferrari SF90 Stradale">Ferrari SF90 Stradale (Rp 8.370.000.000)</option>
-                    <option value="Ferrari SF90 Spider">Ferrari SF90 Spider (Rp 9.190.000.000)</option>
-                    <option value="Ferrari SF90XX Stradale">Ferrari SF90XX Stradale (Rp 15.020.000.000)</option>
-                </select>
+            <br>
 
+            <!-- Pilihan Paket -->
+            <label for="pilih_paket">Paket:</label>
+            <br>
 
-                <br><br>
+            <select name="pilih_paket" id="pilih_paket">
+                <option value="">Pilih Paket</option>
 
-                <button type="submit">
+                <option value="Ferrari SF90 Stradale">
+                    Ferrari SF90 Stradale (Rp 8.370.000.000)
+                </option>
+
+                <option value="Ferrari SF90 Spider">
+                    Ferrari SF90 Spider (Rp 9.190.000.000)
+                </option>
+
+                <option value="Ferrari SF90XX Stradale">
+                    Ferrari SF90XX Stradale (Rp 15.020.000.000)
+                </option>
+            </select>
+
+            <br>
+            <br>
+
+            <!-- Tombol Kirim -->
+            <button type="submit">
                 <b>Kirim Pesanan</b>
             </button>
 
-            </fieldset>
+        </fieldset>
+
+    </form>
 
 </body>
+
 </html>
