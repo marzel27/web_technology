@@ -21,8 +21,8 @@ body {
 }
 
 .table {
-background-color: var(--black);
-width: 45%;
+  background-color: var(--black);
+  width: 45%;
 }
 
 .background-title {
@@ -43,5 +43,5 @@ width: 45%;
   background-color: var(--white);
   color: var(--black);
   padding: 12px 16px;
-  text-align: right
+  text-align: right;
 }
